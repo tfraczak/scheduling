@@ -1,28 +1,27 @@
-# esbuild React Typescript Template
+Write code that will optimize scheduling based on the following parameters:
 
-> This is a Typecript template for [esbuild create react app](https://github.com/awran5/esbuild-create-react-app) project.
+### PATIENT
+- Available times
+- Must see each primary therapist at least once each.
 
-## What is inside?
+### THERAPIST
+- Available times
+- Primary: true/false
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [esbuild](https://esbuild.github.io/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
-- [lint-staged](https://github.com/okonet/lint-staged)
-- [live-server](https://github.com/tapio/live-server)
+### TIME SLOTS
+- 45 minute intervals
+- 15 minute break times at:
+  - 0830-0845
+  - 1015-1030
+  - 1200-1300
+  - 1430-1445
+  - 1615-1715
 
-## Update (01-11-2022)
-
-- add: css module support [esbuild-css-modules-plugin](https://www.npmjs.com/package/esbuild-css-modules-plugin)
-- add: sass/scss [esbuild-sass-plugin](https://www.npmjs.com/package/esbuild-sass-plugin)
-- add: [PostCSS](https://github.com/postcss/postcss)
-- add: [postcss-preset-env](https://github.com/csstools/postcss-plugins/tree/main/plugin-packs/postcss-preset-env)
-- add: [autoprefixer](https://github.com/postcss/autoprefixer)
-- build: update React 18
-- build: update dependencies
-- refactor: rename `dist` folder to `build`
-- refactor: switch to npm instead of yarn
+### CONSTRAINTS
+- No appointments may be scheduled during breaks, or overlapping breaks.
+- All of the patients' and therapists' availabilities must be respected.
+- Each patient must be seen 4 times per day.
+- Each patient must be seen by each primary therapist at least once per day.
 
 ### License
 
