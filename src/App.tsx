@@ -8,7 +8,8 @@ const App = (): JSX.Element => {
     <div>
       <ul style={{ listStyle: 'none' }}>
         <h4 style={{ margin: 0, marginBottom: '5px' }}>Therapists:</h4>
-        {THERAPISTS.map((therapist) => <li>{therapist.name}</li>)}
+        {THERAPISTS.map((therapist) => <li>{therapist.name}{therapist.primary ? '*' : ''}</li>)}
+        <h6 style={{ marginTop: '3px' }}>* denotes primary therapist</h6>
       </ul>
       <ul style={{ listStyle: 'none' }}>
         <h4 style={{ margin: 0, marginBottom: '5px' }}>Patients:</h4>
