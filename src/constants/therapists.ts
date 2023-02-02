@@ -2,28 +2,28 @@ import { Therapist } from '@types';
 
 export const THERAPISTS: Therapist[] = [
   {
-    name: 'A',
+    name: 'Alice',
     availability: [
       { startTime: '0700', endTime: '1500' },
     ],
     primary: true,
   },
   {
-    name: 'B',
+    name: 'Bob',
     availability: [
       { startTime: '0930', endTime: '1730' },
     ],
     primary: true,
   },
   // {
-  //   name: 'C',
+  //   name: 'Charles',
   //   availability: [
   //     { startTime: '0700', endTime: '1730' },
   //   ],
   //   primary: false,
   // },
   {
-    name: 'D',
+    name: 'Diana',
     availability: [
       { startTime: '1100', endTime: '1730' },
     ],

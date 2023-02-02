@@ -2,7 +2,7 @@ import { Patient } from '@types';
 
 export const PATIENTS: Patient[] = [
   {
-    name: 'Pt 1',
+    name: 'Edgar',
     availability: [
       { startTime: '0700', endTime: '1300' },
       { startTime: '1500', endTime: '1715' },
@@ -11,7 +11,7 @@ export const PATIENTS: Patient[] = [
     numAppointments: 0,
   },
   {
-    name: 'Pt 2',
+    name: 'Francine',
     availability: [
       { startTime: '0700', endTime: '1715' },
     ],
@@ -19,7 +19,7 @@ export const PATIENTS: Patient[] = [
     numAppointments: 0,
   },
   {
-    name: 'Pt 3',
+    name: 'George',
     availability: [
       { startTime: '1100', endTime: '1715' },
     ],
@@ -27,7 +27,7 @@ export const PATIENTS: Patient[] = [
     numAppointments: 0,
   },
   {
-    name: 'Pt 4',
+    name: 'Helen',
     availability: [
       { startTime: '0700', endTime: '1715' },
     ],
