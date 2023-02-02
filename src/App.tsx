@@ -1,5 +1,9 @@
-import React from "react";
+import React from 'react';
+import { printSchedule } from '@helpers';
 
-export default function App() {
+const App = (): JSX.Element => {
+  printSchedule();
   return <div>Hello World!</div>;
-}
+};
+
+export default App;

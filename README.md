@@ -23,6 +23,12 @@ Write code that will optimize scheduling based on the following parameters:
 - Each patient must be seen 4 times per day.
 - Each patient must be seen by each primary therapist at least once per day.
 
+## RUN PROGRAM
+
+1. Run `yarn install`.
+2. Run `yarn start`.
+3. Check the dev tools console in your browser: you can check `patients`, `scheduleObj`, `schedule`, and `errorMessage` on the window.
+
 ### License
 
 MIT © [awran5](https://github.com/awran5/)
