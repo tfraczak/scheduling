@@ -33,8 +33,7 @@ const findAvailableTherapists = (scheduleObj: ScheduleObject, timeSlot: TimeSlot
 
   return THERAPISTS
     .filter((therapist) => (
-      isAvailable(therapist, timeSlot) &&
-        !scheduleObj[timeSlot.startTime][therapist.name].patient
+      isAvailable(therapist, timeSlot) && !scheduleObj[timeSlot.startTime][therapist.name].patient
     ))
     .sort((tA, tB) => {
       if (tA.primary === tB.primary) return 0;
@@ -106,10 +105,10 @@ export const buildSchedule = (): [ScheduleObject, Patient[]] => {
 export const printSchedule = (): [Schedule, string] => {
   let schedule: Schedule = [];
   const [scheduleObj, patients] = buildSchedule();
-  const timeSlotStrings = Object.keys(scheduleObj);
-  timeSlotStrings.forEach((timeSlotKey) => {
+
+  Object.keys(scheduleObj).forEach((timeSlotKey) => {
     const timeSlotObj = scheduleObj[timeSlotKey];
-    const therapistNames = Object.keys(scheduleObj[timeSlotKey]).forEach((tName) => {
+    Object.keys(scheduleObj[timeSlotKey]).forEach((tName) => {
       if (timeSlotObj[tName].patient) {
         schedule.push({
           patient: timeSlotObj[tName].patient,
